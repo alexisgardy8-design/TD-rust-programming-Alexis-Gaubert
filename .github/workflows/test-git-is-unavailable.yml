@@ -1,0 +1,16 @@
+name: Validate Git is hidden
+
+# Disabled for now, until we figure out how to remove Git from other downstream components
+on:
+  push:
+    branches: [test-git-is-unavailable]
+
+jobs:
+  test_git_is_unavailable:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Validate Git is hidden
+        run: ./scripts/check_git_is_unavailable.sh

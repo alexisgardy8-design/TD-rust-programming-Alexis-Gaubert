@@ -1,0 +1,1 @@
+Le TD se trouve dans starter_templates/rust/src/main.rs

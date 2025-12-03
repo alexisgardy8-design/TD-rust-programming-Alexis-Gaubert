@@ -1,0 +1,5 @@
+course_definition_tester
+.history/
+node_modules/
+target/
+*.log
